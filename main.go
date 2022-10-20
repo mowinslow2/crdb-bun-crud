@@ -16,7 +16,7 @@ func main() {
 	ctx := context.Background()
 
 	// Connection String
-	addr := "postgresql://morgan:CXPwPD9EVKuzl8bc1eKoCg@free-tier14.aws-us-east-1.cockroachlabs.cloud:26257/galaxy-hare-2055.defaultdb?sslmode=verify-full"
+	addr := "your/connection/string/here" //TODO: UPDATE THIS CONNECTION STRING
 	sqldb := sql.OpenDB(pgdriver.NewConnector(pgdriver.WithDSN(addr)))
 
 	// Bun!
